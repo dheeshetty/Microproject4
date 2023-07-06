@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="pg">
+
+        <h4 class="heading">Password Generator</h4>
+        <div class="show">
+
+            <input class="pass" id="inputBox" type="text" placeholder="P4$5W0rD !">
+            <img class="img" id="copyLogo" src="copy.png" alt="">
+        </div>
+        <div class="footer">
+            <div class="top">
+                <div class="chrctr">Character Length</div>
+                <div class="totlchar" id="lengthValue">0</div>
+            </div>
+            <div>
+                <input class="length" id="inputRange" type="range" value="0" min="0" max="30">
+            </div>
+
+
+            <div class="checkbox">
+                <div class="options">
+                    <input id="UPPERCASE" class="chk upper" type="checkbox" >
+                    <label class="label" for="UPPERCASE">Include Uppercase Letters</label>
+                </div>
+
+
+                <div class="options">
+                    <input id="LOWERCASE" class="chk lower" type="checkbox">
+                    <label class="label" for="LOWERCASE">Include Lowercase Letters</label>
+                </div>
+
+                <div class="options">
+                    <input id="NUMBERS" class="chk num" type="checkbox" >
+                    <label class="label" for="NUMBERS">Include Numbers
+                    </label>
+                </div>
+
+
+                <div class="options">
+                    <input id="SYMBOLS" class="chk sym" type="checkbox">
+                    <label class="label" for="SYMBOLS">Include Symbols</label>
+                </div>
+            </div>
+
+
+            <div class="strength">
+                <span id="box1" class="bar1 box"></span>
+                <span id="box2" class="bar2 box"></span>
+                <span id="box3" class="bar3 box"></span>
+                <span id="box4" class="bar4 box"></span>
+                <input class="input" type="text" placeholder="STRENGTH" readonly>
+            </div>
+
+
+            <button class="button" id="genButton">GENERATE </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
